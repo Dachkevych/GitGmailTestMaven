@@ -17,12 +17,4 @@ public class UserModelGithub {
     public String getPassword() {
         return password;
     }
-
-    @Override
-    public String toString() {
-        return "UserModelGithub{" +
-                "login='" + login + '\'' +
-                ", password='" + password + '\'' +
-                '}';
-    }
 }

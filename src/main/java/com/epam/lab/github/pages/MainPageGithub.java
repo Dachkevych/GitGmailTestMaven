@@ -9,6 +9,8 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 
 import java.util.List;
 
+import static com.epam.lab.utils.DriverManager.newWait;
+
 public class MainPageGithub extends PageObject {
 
     @FindBy(name = "q")
@@ -35,21 +37,13 @@ public class MainPageGithub extends PageObject {
     }
 
     public boolean checkSiginSuccess() {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(accountButton));
+        newWait().until(ExpectedConditions.visibilityOf(accountButton));
         accountButton.click();
         return signIn.getText().contains("Signed in");
     }
 
-    public PageElement getSearch() {
-        return search;
-    }
-
     public List<PageElement> getLists() {
         return lists;
-    }
-
-    public PageElement getResultCount() {
-        return resultCount;
     }
 
     public PageElement getAmountSearchResult() {

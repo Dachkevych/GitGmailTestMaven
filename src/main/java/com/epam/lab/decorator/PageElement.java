@@ -1,11 +1,14 @@
 package com.epam.lab.decorator;
 
-import junit.framework.Assert;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 
 import java.util.Arrays;
 import java.util.List;
+
+import static com.epam.lab.utils.DriverManager.newWait;
 
 public class PageElement implements WebElement {
 
@@ -22,7 +25,7 @@ public class PageElement implements WebElement {
     }
 
     public void click() {
-        LOGGER.info("Click on [" + name + "]");
+        LOGGER.info("Click on [" + this.name + "]");
         webElement.click();
     }
 
@@ -36,7 +39,7 @@ public class PageElement implements WebElement {
     }
 
     public void sendKeys(CharSequence... keysToSend) {
-        LOGGER.info("Sending keys to [" + name + "] value [" + Arrays.toString(keysToSend) + "]");
+        LOGGER.info("Sending keys to [" + this.name + "] value [" + Arrays.toString(keysToSend) + "]");
         webElement.sendKeys(keysToSend);
     }
 
@@ -105,7 +108,7 @@ public class PageElement implements WebElement {
     }
 
     public PageElement waitUntilVisible() {
-//        newWait().until(ExpectedConditions.visibilityOf(this));
+        newWait().until(ExpectedConditions.visibilityOf(this));
         return this;
     }
 }

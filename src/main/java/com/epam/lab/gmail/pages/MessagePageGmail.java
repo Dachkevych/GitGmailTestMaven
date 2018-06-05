@@ -3,9 +3,10 @@ package com.epam.lab.gmail.pages;
 import com.epam.lab.PageObject;
 import com.epam.lab.decorator.Name;
 import com.epam.lab.decorator.PageElement;
-import com.epam.lab.utils.DriverManager;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import static com.epam.lab.utils.DriverManager.newWait;
 
 public class MessagePageGmail extends PageObject {
 
@@ -26,7 +27,7 @@ public class MessagePageGmail extends PageObject {
     private PageElement closeMessage;
 
     public void writeMessage(String to, String subj, String str) {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(reciever));
+        newWait().until(ExpectedConditions.visibilityOf(reciever));
         reciever.sendKeys(to);
         subject.sendKeys(subj);
         text.sendKeys(str);

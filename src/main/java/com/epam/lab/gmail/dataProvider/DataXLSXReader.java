@@ -13,53 +13,37 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Objects;
 
 import static com.epam.lab.utils.Constants.DATA_XLSX;
 
 public final class DataXLSXReader {
 
-    public static List<UserModelGmail> getDataFromXLSX() {
+    public static List<UserModelGmail> getDataFromXLSX(File file) {
 
-        List<UserModelGmail> users = new ArrayList<>();
-        FileInputStream inputStream = null;
-
+        List<UserModelGmail> gmailDataList = new ArrayList<>();
+        XSSFWorkbook workbook;
         try {
-            inputStream = new FileInputStream(new File(DATA_XLSX));
-            Workbook workbook = new XSSFWorkbook(inputStream);
-            Sheet firstSheet = workbook.getSheetAt(0);
-            Iterator<Row> iterator = firstSheet.iterator();
+            workbook = new XSSFWorkbook(new FileInputStream(file));
 
-            while (iterator.hasNext()) {
-                Row nextRow = iterator.next();
-                Iterator<Cell> cellIterator = nextRow.cellIterator();
-                UserModelGmail user = new UserModelGmail();
-                while (cellIterator.hasNext()) {
-                    Cell nextCell = cellIterator.next();
-                    int columnIndex = nextCell.getColumnIndex();
-                    switch (columnIndex) {
-                        case 0:
-                            user.setLogin(nextCell.getStringCellValue());
-                            break;
-                        case 1:
-                            user.setPassword(nextCell.getStringCellValue());
-                            break;
-                        case 2:
-                            user.setReceiver(nextCell.getStringCellValue());
-                            break;
-                        case 3:
-                            user.setSubject(nextCell.getStringCellValue());
-                            break;
-                        case 4:
-                            user.setText(nextCell.getStringCellValue());
-                            break;
-                    }
+            Sheet sheet = workbook.getSheetAt(0);
+            Iterator<Row> rows = sheet.rowIterator();
+            while (rows.hasNext()) {
+                UserModelGmail gmailData = new UserModelGmail();
+                Row row = rows.next();
+                //Sometimes Excel return deleted rows with blank cells
+                if (Objects.nonNull(row.getCell(1))) {
+                    gmailData.setLogin(row.getCell(0).getStringCellValue());
+                    gmailData.setPassword(row.getCell(1).getStringCellValue());
+                    gmailData.setReceiver(row.getCell(2).getStringCellValue());
+                    gmailData.setSubject(row.getCell(3).getStringCellValue());
+                    gmailData.setText(row.getCell(4).getStringCellValue());
+                    gmailDataList.add(gmailData);
                 }
-                users.add(user);
             }
-            inputStream.close();
-        } catch (IOException e1) {
-            e1.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
-        return users;
+        return gmailDataList;
     }
 }

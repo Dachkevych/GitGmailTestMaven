@@ -17,15 +17,18 @@ public class LoginPageGmail extends PageObject {
     private PageElement passwordInput;
 
     @Name("Submit")
-    @FindBy(id ="identifierNext")
+    @FindBy(id = "identifierNext")
     private PageElement nextBtn;
 
     @Name("Submit Logi and Password")
     @FindBy(id = "passwordNext")
     private PageElement submitLogin;
 
+    @FindBy(className = "gmail-nav__nav-link__sign-in")
+    private PageElement signInNewButton;
+
     public void logIn(String login, String password) {
         loginInput.sendKeys(login, Keys.ENTER);
-        passwordInput.sendKeys(password, Keys.ENTER);
+        passwordInput.waitUntilVisible().sendKeys(password, Keys.ENTER);
     }
 }

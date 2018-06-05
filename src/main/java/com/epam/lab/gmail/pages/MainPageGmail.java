@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static com.epam.lab.utils.DriverManager.newWait;
+
 public class MainPageGmail extends PageObject {
     private Boolean statusLoad;
     @Name("Draft message")
@@ -22,12 +24,12 @@ public class MainPageGmail extends PageObject {
     }
 
     public void clickComposeBtn() {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(composeBtn));
+        newWait().until(ExpectedConditions.visibilityOf(composeBtn));
         composeBtn.click();
     }
 
     public void clickDraftBtn() {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(draftBtn));
+        newWait().until(ExpectedConditions.visibilityOf(draftBtn));
         draftBtn.click();
     }
 

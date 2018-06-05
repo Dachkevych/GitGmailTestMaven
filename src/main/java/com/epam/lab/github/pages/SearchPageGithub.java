@@ -21,19 +21,4 @@ public class SearchPageGithub extends PageObject {
     @Name("Check sort")
     @FindBy(xpath = "//span[@class='js-select-button']")
     private PageElement checkSort;
-
-    public void clickSortBtn() {
-        sortType.click();
-    }
-
-    public void changeSort() {
-        sortFewestStars.click();
-    }
-
-    public boolean checkChangeSortSuccess() {
-        if (DriverManager.newWait().until(ExpectedConditions.visibilityOf(checkSort)).getText().contains("Fewest stars")) {
-            statusLoad = true;
-        }
-        return statusLoad;
-    }
 }

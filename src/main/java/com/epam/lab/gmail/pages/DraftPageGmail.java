@@ -8,6 +8,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import static com.epam.lab.utils.DriverManager.newWait;
+
 public class DraftPageGmail extends PageObject {
 
     private Boolean ifSentMessage;
@@ -25,12 +27,12 @@ public class DraftPageGmail extends PageObject {
 
 
     public void clickLastDraft() {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(lastDraft));
+        newWait().until(ExpectedConditions.visibilityOf(lastDraft));
         lastDraft.click();
     }
 
     public void clickSendDraft() {
-        DriverManager.newWait().until(ExpectedConditions.visibilityOf(sendDraftMessage));
+        newWait().until(ExpectedConditions.visibilityOf(sendDraftMessage));
         sendDraftMessage.click();
     }
 

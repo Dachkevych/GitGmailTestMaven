@@ -4,22 +4,20 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import java.util.concurrent.TimeUnit;
-
 import static com.epam.lab.utils.ConfigProperties.getTestProperty;
 
 public class DriverManager {
 
     private static ThreadLocal<WebDriver> driver = ThreadLocal.withInitial(() -> {
-        System.setProperty(getTestProperty("driverType"),
-                getTestProperty("driverPath"));
-        WebDriver instance = new ChromeDriver();
-        instance.manage().window().maximize();
-        instance.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-        return instance;
+        System.setProperty(getTestProperty("driverType"), getTestProperty("driverPath"));
+        return new ChromeDriver();
     });
 
     private DriverManager() {
+    }
+
+    public static void load(String URL) {
+        getDriver().get(URL);
     }
 
     public static WebDriver getDriver() {

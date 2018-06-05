@@ -1,11 +1,14 @@
 package com.epam.lab.gmail.dataProvider;
 
+import com.epam.lab.utils.ConfigProperties;
 import org.testng.annotations.DataProvider;
+
+import java.io.File;
 
 public class DataProviderGmail {
 
-    @DataProvider(name = "excelData")
-    public Object[][] getEXCELData() {
-        return DataXLSXReader.getDataFromXLSX().stream().map(i -> new Object[]{i}).toArray(Object[][]::new);
+    @DataProvider(parallel = true)
+    public Object[] getData() {
+        return DataXLSXReader.getDataFromXLSX(new File(ConfigProperties.getTestProperty("dataXLSX"))).toArray();
     }
 }

@@ -7,9 +7,13 @@ import com.epam.lab.gmail.dataobject.UserModelGmail;
 import com.epam.lab.listeners.CustomListener;
 import com.epam.lab.utils.DriverManager;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 
-import static com.epam.lab.utils.Constants.*;
+import static com.epam.lab.utils.Constants.LINK_GMAIL;
+import static com.epam.lab.utils.Constants.PATH_LOG4J;
 
 @Listeners({CustomListener.class})
 public class TestGmail {

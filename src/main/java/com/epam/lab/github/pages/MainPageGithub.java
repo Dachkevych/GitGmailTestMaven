@@ -2,7 +2,6 @@ package com.epam.lab.github.pages;
 
 import com.epam.lab.PageObject;
 import com.epam.lab.decorator.PageElement;
-import com.epam.lab.utils.DriverManager;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="60.354" tests="2" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="9.0.4+11"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin"/>
+    <property name="user.country.format" value="UA"/>
+    <property name="maven.multiModuleProjectDirectory" value="C:\Users\Taras\git\SeleniumCSVandXLSParser"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="http://java.oracle.com/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="file.encoding.pkg" value="sun.io"/>
+    <property name="sun.os.patch.level" value="Service Pack 1"/>
+    <property name="user.script" value=""/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="RU"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="C:\Users\Taras\git\SeleniumCSVandXLSParser"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="9.0.4+11"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\Taras\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 7"/>
+    <property name="classworlds.conf" value="C:\Program Files\Maven\bin\..\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1251"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-9.0.4\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Windows\system32\;C:\Program Files\Git\cmd;C:\Program Files\Maven\bin;C:\Program Files (x86)\Brackets\command;."/>
+    <property name="maven.conf" value="C:\Program Files\Maven\bin\../conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="53.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="6.1"/>
+    <property name="library.jansi.path" value="C:\Program Files\Maven\bin\..\lib\jansi-native"/>
+    <property name="user.home" value="C:\Users\Taras"/>
+    <property name="user.timezone" value="Europe/Helsinki"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1251"/>
+    <property name="java.specification.version" value="9"/>
+    <property name="user.name" value="Taras"/>
+    <property name="java.class.path" value="C:\Program Files\Maven\bin\..\boot\plexus-classworlds-2.5.2.jar"/>
+    <property name="java.vm.specification.version" value="9"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher clean test"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-9.0.4"/>
+    <property name="user.language" value="ru"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.language.format" value="uk"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="9.0.4"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp866"/>
+    <property name="maven.home" value="C:\Program Files\Maven\bin\.."/>
+    <property name="file.separator" value="\"/>
+    <property name="java.vendor.url.bug" value="http://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="sun.stdout.encoding" value="cp866"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="createAndSendMessage" classname="com.epam.lab.gmail.tests.TestGmail" time="20.941"/>
+  <testcase name="logIn" classname="com.epam.lab.github.tests.TestGitHub" time="19.355">
+    <failure message="The following asserts failed:&#10;	expected [10] but found [9],&#10;	expected [10] but found [9]" type="java.lang.AssertionError">java.lang.AssertionError: 
+The following asserts failed:
+	expected [10] but found [9],
+	expected [10] but found [9]
+	at com.epam.lab.github.tests.TestGitHub.logIn(TestGitHub.java:62)
+</failure>
+    <system-out><![CDATA[2018-06-05 18:19:33 [TestNG-PoolService-0] INFO  com.epam.lab.listeners.CustomListener  - test passed null during time 20933
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null<br>]=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a]}]
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - Failed tests:[ResultMap map={}]
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null<br>]=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a]}]
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - Failed tests:[ResultMap map={}]
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - test starts GitHub Test on Tue Jun 05 18:19:34 EEST 2018
+ 2018-06-05 18:19:34 [main] INFO  com.epam.lab.listeners.CustomListener  - test starts GitHub Test on Tue Jun 05 18:19:34 EEST 2018
+ 2018-06-05 18:19:42 [main] INFO  com.epam.lab.listeners.CustomListener  - test starts null
+ 2018-06-05 18:19:42 [main] INFO  com.epam.lab.listeners.CustomListener  - test starts null
+ 2018-06-05 18:19:42 [main] INFO  com.epam.lab.decorator.PageElement  - Click on [SignIn]
+ 2018-06-05 18:19:43 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [Login] value [[taras_131@gmail.com]]
+ 2018-06-05 18:19:44 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [Password] value [[taras131, ?]]
+ 2018-06-05 18:19:45 [main] INFO  com.epam.lab.decorator.PageElement  - Click on [null]
+ 2018-06-05 18:19:46 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [null] value [[selenium java, ?]]
+ 2018-06-05 18:19:48 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - 3,670 repository results
+ 2018-06-05 18:19:48 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - Result verify tag: 10 from 10 tags contains tag - selenium
+ 2018-06-05 18:19:49 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [null] value [[selenium java, ?]]
+ 2018-06-05 18:19:50 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - 3,670 repository results
+ 2018-06-05 18:19:51 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - Result verify tag: 10 from 10 tags contains tag - selenium
+ 2018-06-05 18:19:51 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [null] value [[cucumber java, ?]]
+ 2018-06-05 18:19:54 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - 1,190 repository results
+ 2018-06-05 18:19:54 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - Result verify tag: 9 from 10 tags contains tag - cucumber
+ 2018-06-05 18:19:55 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [null] value [[testng java, ?]]
+ 2018-06-05 18:19:57 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - 830 repository results
+ 2018-06-05 18:19:58 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - Result verify tag: 9 from 10 tags contains tag - testng
+ 2018-06-05 18:19:58 [main] INFO  com.epam.lab.decorator.PageElement  - Sending keys to [null] value [[junit java, ?]]
+ 2018-06-05 18:20:00 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - 2,305 repository results
+ 2018-06-05 18:20:01 [main] INFO  com.epam.lab.github.bo.GithubSearchPageBO  - Result verify tag: 10 from 10 tags contains tag - junit
+ 2018-06-05 18:20:01 [main] INFO  com.epam.lab.listeners.CustomListener  - test failed null
+ ]]></system-out>
+    <system-err><![CDATA[Starting ChromeDriver 2.38.552522 (437e6fbedfa8762dec75e2c5b3ddb86763dc9dcb) on port 11715
+Only local connections are allowed.
+черв. 05, 2018 6:19:38 ПП org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: OSS
+]]></system-err>
+  </testcase>
+</testsuite>

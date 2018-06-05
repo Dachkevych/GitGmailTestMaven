@@ -7,7 +7,10 @@ import com.epam.lab.github.dataobject.UserModelGithub;
 import com.epam.lab.listeners.CustomListener;
 import com.epam.lab.utils.DriverManager;
 import org.apache.log4j.PropertyConfigurator;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Listeners;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
 import static com.epam.lab.utils.Constants.*;

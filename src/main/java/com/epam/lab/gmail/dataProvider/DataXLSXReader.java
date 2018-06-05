@@ -1,10 +1,8 @@
 package com.epam.lab.gmail.dataProvider;
 
 import com.epam.lab.gmail.dataobject.UserModelGmail;
-import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
-import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 import java.io.File;
@@ -14,8 +12,6 @@ import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Objects;
-
-import static com.epam.lab.utils.Constants.DATA_XLSX;
 
 public final class DataXLSXReader {
 

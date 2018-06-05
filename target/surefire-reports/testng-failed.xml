@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="-1" name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="com.epam.lab.listeners.CustomListener"/>
+  </listeners>
+  <test name="GitHub Test(failed)" verbose="0">
+    <classes>
+      <class name="com.epam.lab.github.tests.TestGitHub">
+        <methods>
+          <include name="logIn" invocation-numbers="0"/>
+          <include name="kill"/>
+          <include name="createInstance"/>
+        </methods>
+      </class> <!-- com.epam.lab.github.tests.TestGitHub -->
+    </classes>
+  </test> <!-- GitHub Test(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

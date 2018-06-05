@@ -1,11 +1,7 @@
 package com.epam.lab.github.bo;
 
 import com.epam.lab.github.pages.MainPageGithub;
-import com.epam.lab.github.pages.SearchPageGithub;
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-
-import static org.testng.Assert.assertTrue;
 
 public class GithubSearchPageBO {
     private static final Logger LOGGER = Logger.getLogger(GithubSearchPageBO.class);

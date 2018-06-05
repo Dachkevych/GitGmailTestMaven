@@ -1,0 +1,11 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.354 sec <<< FAILURE! - in TestSuite
+logIn(com.epam.lab.github.tests.TestGitHub)  Time elapsed: 19.355 sec  <<< FAILURE!
+java.lang.AssertionError: 
+The following asserts failed:
+	expected [10] but found [9],
+	expected [10] but found [9]
+	at com.epam.lab.github.tests.TestGitHub.logIn(TestGitHub.java:62)
+

@@ -14,9 +14,11 @@
 [18:19:33 INFO] Click on [Sent message]
 [18:19:33 INFO] test passed null during time 20933
 [18:19:33 INFO] test passed null during time 20933
-[18:19:34 INFO] Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null<br>]=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a]}]
+[18:19:34 INFO] Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(UserModelGmail)[pri:0, instance:TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null
+<br>]=TestGmail.createAndSendMessage(UserModelGmail)[pri:0, instance:TestGmail@7bab3f1a]}]
 [18:19:34 INFO] Failed tests:[ResultMap map={}]
-[18:19:34 INFO] Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null<br>]=TestGmail.createAndSendMessage(com.epam.lab.gmail.dataobject.UserModelGmail)[pri:0, instance:com.epam.lab.gmail.tests.TestGmail@7bab3f1a]}]
+[18:19:34 INFO] Passed tests: [ResultMap map={[TestResult name=createAndSendMessage status=SUCCESS method=TestGmail.createAndSendMessage(UserModelGmail)[pri:0, instance:TestGmail@7bab3f1a] output=[18:19:12 INFO] test starts null
+<br>]=TestGmail.createAndSendMessage(UserModelGmail)[pri:0, instance:TestGmail@7bab3f1a]}]
 [18:19:34 INFO] Failed tests:[ResultMap map={}]
 [18:19:34 INFO] test starts GitHub Test on Tue Jun 05 18:19:34 EEST 2018
 [18:19:34 INFO] test starts GitHub Test on Tue Jun 05 18:19:34 EEST 2018
@@ -44,12 +46,73 @@
 [18:20:01 INFO] test failed null
 [18:20:01 INFO] test failed null
 [18:20:02 INFO] Passed tests: [ResultMap map={}]
-[18:20:02 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(com.epam.lab.github.dataobject.UserModelGithub)[pri:0, instance:com.epam.lab.github.tests.TestGitHub@942a29c] output=[18:19:42 INFO] test starts null<br>]=TestGitHub.logIn(com.epam.lab.github.dataobject.UserModelGithub)[pri:0, instance:com.epam.lab.github.tests.TestGitHub@942a29c]}]
+[18:20:02 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@942a29c] output=[18:19:42 INFO] test starts null
+<br>]=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@942a29c]}]
 [18:20:02 INFO] Passed tests: [ResultMap map={}]
-[18:20:02 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(com.epam.lab.github.dataobject.UserModelGithub)[pri:0, instance:com.epam.lab.github.tests.TestGitHub@942a29c] output=[18:19:42 INFO] test starts null<br>]=TestGitHub.logIn(com.epam.lab.github.dataobject.UserModelGithub)[pri:0, instance:com.epam.lab.github.tests.TestGitHub@942a29c]}]
+[18:20:02 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@942a29c] output=[18:19:42 INFO] test starts null
+<br>]=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@942a29c]}]
 [18:20:02 INFO] Passed tests for suite 'All Test Suite' is - 1
 [18:20:02 INFO] Failed tests for suite 'All Test Suite' is:0
 [18:20:02 INFO] Skipped tests for suite 'All Test Suite' is:0
 [18:20:02 INFO] Passed tests for suite 'All Test Suite' is - 0
 [18:20:02 INFO] Failed tests for suite 'All Test Suite' is:1
 [18:20:02 INFO] Skipped tests for suite 'All Test Suite' is:0
+[22:50:25 INFO] test starts task3 on Tue Jan 26 22:50:25 EET 2021
+[22:50:25 INFO] test skipped null
+[22:50:25 INFO] Passed tests: [ResultMap map={}]
+[22:50:25 INFO] Failed tests:[ResultMap map={}]
+[22:50:25 INFO] Passed tests for suite 'Default Suite' is - 0
+[22:50:25 INFO] Failed tests for suite 'Default Suite' is:0
+[22:50:25 INFO] Skipped tests for suite 'Default Suite' is:1
+[22:51:18 INFO] test starts task3 on Tue Jan 26 22:51:18 EET 2021
+[22:51:22 INFO] test starts null
+[22:51:22 INFO] Click on [SignIn]
+[22:51:24 INFO] Sending keys to [Login] value [[taras_131@gmail.com]]
+[22:51:24 INFO] Sending keys to [Password] value [[taras131, ]]
+[22:51:40 INFO] test failed null
+[22:51:40 INFO] Passed tests: [ResultMap map={}]
+[22:51:40 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@2d209079] output=[22:51:22 INFO] test starts null<br>]=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@2d209079]}]
+[22:51:40 INFO] Passed tests for suite 'Default Suite' is - 0
+[22:51:40 INFO] Failed tests for suite 'Default Suite' is:1
+[22:51:40 INFO] Skipped tests for suite 'Default Suite' is:0
+[22:52:46 INFO] test starts task3 on Tue Jan 26 22:52:46 EET 2021
+[22:52:51 INFO] test starts null
+[22:52:51 INFO] Sending keys to [Login] value [[seleniumtest581@gmail.com, ]]
+[23:11:14 INFO] test starts task3 on Tue Jan 26 23:11:14 EET 2021
+[23:11:20 INFO] test starts null
+[23:11:20 INFO] Click on [SignIn]
+[23:11:20 INFO] Sending keys to [Login] value [[taras_131@gmail.com]]
+[23:11:20 INFO] Sending keys to [Password] value [[taras131, ]]
+[23:15:37 INFO] test starts task3 on Tue Jan 26 23:15:37 EET 2021
+[23:15:40 INFO] test starts null
+[23:15:40 INFO] Click on [null]
+[23:15:41 INFO] Sending keys to [Login] value [[taras_131@gmail.com]]
+[23:15:41 INFO] Sending keys to [Password] value [[taras131, ]]
+[23:15:54 INFO] test failed null
+[23:15:54 INFO] Passed tests: [ResultMap map={}]
+[23:15:54 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@6b71769e] output=[23:15:40 INFO] test starts null<br>]=TestGitHub.logIn(UserModelGithub)[pri:0, instance:TestGitHub@6b71769e]}]
+[23:15:54 INFO] Passed tests for suite 'Default Suite' is - 0
+[23:15:54 INFO] Failed tests for suite 'Default Suite' is:1
+[23:15:54 INFO] Skipped tests for suite 'Default Suite' is:0
+[23:26:27 INFO] test starts task3 on Tue Jan 26 23:26:27 EET 2021
+[23:26:36 INFO] test starts null
+[23:26:36 INFO] Click on [SignIn]
+[23:26:38 INFO] Sending keys to [Login] value [[taras_131@gmail.com]]
+[23:26:38 INFO] Sending keys to [Password] value [[taras131, ]]
+[23:26:44 INFO] test failed null
+[23:26:44 INFO] Passed tests: [ResultMap map={}]
+[23:26:44 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(base.com.ua.github.dto.UserModelGithub)[pri:0, instance:base.com.ua.github.tests.TestGitHub@2752f6e2] output=[23:26:36 INFO] test starts null<br>]=TestGitHub.logIn(base.com.ua.github.dto.UserModelGithub)[pri:0, instance:base.com.ua.github.tests.TestGitHub@2752f6e2]}]
+[23:26:44 INFO] Passed tests for suite 'Default Suite' is - 0
+[23:26:44 INFO] Failed tests for suite 'Default Suite' is:1
+[23:26:44 INFO] Skipped tests for suite 'Default Suite' is:0
+[23:35:00 INFO] test starts task3 on Tue Jan 26 23:35:00 EET 2021
+[23:35:03 INFO] test starts logIn
+[23:35:03 INFO] Click on [SignIn]
+[23:35:05 INFO] Sending keys to [Login] value [[taras_131@gmail.com]]
+[23:35:05 INFO] Sending keys to [Password] value [[taras131, ]]
+[23:35:20 INFO] test failed logIn
+[23:35:20 INFO] Passed tests: [ResultMap map={}]
+[23:35:20 INFO] Failed tests:[ResultMap map={[TestResult name=logIn status=FAILURE method=TestGitHub.logIn(base.com.ua.github.dto.UserModelGithub)[pri:0, instance:base.com.ua.github.tests.TestGitHub@6b71769e] output=[23:35:03 INFO] test starts logIn<br>]=TestGitHub.logIn(base.com.ua.github.dto.UserModelGithub)[pri:0, instance:base.com.ua.github.tests.TestGitHub@6b71769e]}]
+[23:35:20 INFO] Passed tests for suite 'Default Suite' is - 0
+[23:35:20 INFO] Failed tests for suite 'Default Suite' is:1
+[23:35:20 INFO] Skipped tests for suite 'Default Suite' is:0
